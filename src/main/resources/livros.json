@@ -1,0 +1,34 @@
+[
+  {
+    "titulo": "As intermitências da morte",
+    "autor": "José Saramago",
+    "descricao": "Depois de séculos sendo odiada pela humanidade, a morte resolve pendurar o chapéu e abandonar o ofício",
+    "numeroPaginas": 231 ,
+    "idioma": "Português",
+    "preco": 36.99
+  },
+  {
+    "titulo": "Do Mil ao Milhão. Sem Cortar o Cafezinho",
+    "autor":"Tiago Nigro",
+    "descricao": "Por meio de dados e de sua própria experiência como investidor e assessor, Nigro mostra que a riqueza é possível para todos",
+    "numeroPaginas": 215 ,
+    "idioma": "Português",
+    "preco": 23.73
+  },
+  {
+    "titulo": "O poder do hábito",
+    "autor":"Charles Duhigg",
+    "descricao": "O Poder do Hábito: por que fazemos o que fazemos na vida e nos negócios",
+    "numeroPaginas": 465 ,
+    "idioma": "Português",
+    "preco": 38.98
+  },
+ {
+    "titulo": "Morte e Vida Severina",
+    "autor": "João Cabral de Melo Neto",
+    "descricao": "Morte e Vida severina é um livro de poema regionalista e modernista",
+    "numeroPaginas": 144,
+    "idioma": "Português",
+    "preco": 33.99
+  }
+]
