@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "82c1206d-8d97-4edb-9c51-e34274a709bf",
+		"name": "livraria-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/livraria-api/livros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"livraria-api",
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "incluir",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null ,\n    \"titulo\": \"Os Miseráveis\",\n    \"autor\": \"Vitor Hugo\",\n    \"descricao\": \"Uma apaixonante história de sonhos desfeitos, de um amor não correspondido, paixão, sacrifício e redenção\",\n    \"numeroPaginas\": 2098,\n    \"idioma\": \"Português\",\n    \"preco\": 64.74\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/livraria-api/livros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"livraria-api",
+						"livros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/livraria-api/livros/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"livraria-api",
+						"livros",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/livraria-api/livros/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"livraria-api",
+						"livros",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 5,\n    \"titulo\": \"Os Miseráveis\",\n    \"autor\": \"Vitor Hugo\",\n    \"descricao\": \"Uma apaixonante história de sonhos desfeitos, de um amor não correspondido, paixão, sacrifício e redenção\",\n    \"numeroPaginas\": 2098,\n    \"idioma\": \"Português\",\n    \"preco\": 80.00\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/livraria-api/livros/80",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"livraria-api",
+						"livros",
+						"80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "googleBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/livraria-api/livros/googlebooks/volumes?param=Java",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"livraria-api",
+						"livros",
+						"googlebooks",
+						"volumes"
+					],
+					"query": [
+						{
+							"key": "param",
+							"value": "Java"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
